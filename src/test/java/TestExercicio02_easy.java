@@ -8,10 +8,7 @@ public class TestExercicio02_easy {
     @Test
     public void testRetornaPalavra(){
         Exercicio02_easy exercicio02_easy = new Exercicio02_easy(); 
-        
-        Assert.assertEquals("Test", exercicio02_easy.retornaPalavra("Test"));
-        
-
+        Assert.assertEquals("O usuario digitou : Test", exercicio02_easy.retornaPalavra("Test"));
     }
     
 }

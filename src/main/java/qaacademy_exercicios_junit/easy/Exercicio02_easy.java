@@ -1,6 +1,5 @@
 package qaacademy_exercicios_junit.easy;
 
-import javax.swing.JOptionPane;
 
 public class Exercicio02_easy {// incio da classe Exercicio
 

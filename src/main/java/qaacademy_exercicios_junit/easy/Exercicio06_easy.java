@@ -10,12 +10,12 @@ public class Exercicio06_easy {// inicio classe
         if (resultado > 5) { // incio
             return "Você está Aprovado! Parabéns!!!";
         } // fim se
-        if (resultado < 5) {// inicio se
+        if (resultado >= 0 && resultado < 5) {// inicio se
             return ("Você está Reprovado!");
         } // fim se
         if (resultado == 5) { // inicio IF
             return ("Você está de Exame");
         } // fim if
-        return "Não foi possívl calcular sua nota";
+        return "Não foi possível calcular sua nota. Valor inválido";
     }// fim metodo
 }// fim classe

@@ -33,5 +33,4 @@ public class TestExercicio05_easy {
         int soma = exercicio05_easy.soma(2, 2, 2);
         Assert.assertEquals(2, exercicio05_easy.media(soma));
     }
-
 }

@@ -6,14 +6,17 @@ public class Exercicio08_easy {
 
     public double calculaImpostoDeRenda(double salario) {
 
-        double salarioLiquido = 0.0, impostoRenda = 0;
+        double salarioLiquido = 0.0, impostoRenda = 0.0;
 
         if (salario <= 1903.98) {
-            impostoRenda = 0;
+            impostoRenda = 0.0;
         }
 
         if (salario >= 1903.99 && salario <= 2826.65) {
             impostoRenda = (salario * 0.075) - 142.80;
+            if (impostoRenda <= 0) {
+                impostoRenda = 0.0;
+            }
         }
         if (salario >= 2826.66 && salario <= 3751.05) {
             impostoRenda = (salario * 0.15) - 354.8;

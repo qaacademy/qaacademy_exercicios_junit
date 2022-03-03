@@ -18,7 +18,6 @@ public class TestExercicio11_easy {
 
         Assert.assertEquals(210,ex11.somaDois(10));
        
-
     }
     
 }

@@ -19,7 +19,7 @@ public class TestExercicio10_easy {
 
     @Test
     public void testeCalculaValorJuros() {
-        String valorEsperado = "666,50";
+        String valorEsperado = "666.50";
         String valorAltual = decimalFormat.format(ex10.calcularValorJuros(1333.00));
         Assert.assertEquals(valorEsperado, valorAltual);
     }

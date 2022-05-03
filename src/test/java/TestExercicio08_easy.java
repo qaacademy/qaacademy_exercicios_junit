@@ -34,7 +34,7 @@ public class TestExercicio08_easy {
     @Test
     public void testeSalarioSegundaFaixaIrSegundaCondicao() {
 
-        String valorEsperado = "69,20";
+        String valorEsperado = "69.20";
         String valorAtual = decimalFormat.format(exercicio08_easy.calculaImpostoDeRenda(2826.65));
         Assert.assertEquals(valorEsperado, valorAtual);
     }
@@ -43,7 +43,7 @@ public class TestExercicio08_easy {
         @Test
         public void testeSalarioTerceiraFaixaIrPrimeiraCondicao() {
     
-            String valorEsperado = "69,20";
+            String valorEsperado = "69.20";
             String valorAtual = decimalFormat.format(exercicio08_easy.calculaImpostoDeRenda(2826.66));
             Assert.assertEquals(valorEsperado, valorAtual);
         }
@@ -51,14 +51,14 @@ public class TestExercicio08_easy {
         @Test
         public void testeSalarioTerceiraFaixaIrSegundaCondicao() {
     
-            String valorEsperado = "207,86";
+            String valorEsperado = "207.86";
             String valorAtual = decimalFormat.format(exercicio08_easy.calculaImpostoDeRenda(3751.05));
             Assert.assertEquals(valorEsperado, valorAtual);
         }
 
         @Test
         public void testeSalarioQuartaFaixaIrPrimeiraCondicao() {
-            String valorEsperado = "207,86";
+            String valorEsperado = "207.86";
             String valorAtual = decimalFormat.format(exercicio08_easy.calculaImpostoDeRenda(3751.06));
             Assert.assertEquals(valorEsperado, valorAtual);
         }
@@ -66,7 +66,7 @@ public class TestExercicio08_easy {
         @Test
         public void testeSalarioQuartaFaixaIrSegundaCondicao() {
     
-            String valorEsperado = "413,42";
+            String valorEsperado = "413.42";
             String valorAtual = decimalFormat.format(exercicio08_easy.calculaImpostoDeRenda(4664.68));
             Assert.assertEquals(valorEsperado, valorAtual);
         }
@@ -74,7 +74,7 @@ public class TestExercicio08_easy {
         @Test
         public void testeSalarioQuintaFaixaIr() {
 
-            String valorEsperado = "413,43";
+            String valorEsperado = "413.43";
             String valorAtual = decimalFormat.format(exercicio08_easy.calculaImpostoDeRenda(4664.69));
             Assert.assertEquals(valorEsperado, valorAtual);
         }
@@ -82,7 +82,7 @@ public class TestExercicio08_easy {
         @Test
         public void testeSalarioLiquido() {
 
-            String valorEsperado = "1.992,80";
+            String valorEsperado = "1,992,80";
             String valorAtual = decimalFormat.format(exercicio08_easy.calculaSalarioLiquido(2000.00, exercicio08_easy.calculaImpostoDeRenda(2000.00)));
             Assert.assertEquals(valorEsperado, valorAtual);
         }

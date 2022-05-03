@@ -31,7 +31,7 @@ public class TestExercicio02 {
     }
     @Test
     public void testeCalculaValorTotal(){
-        String valorEsperado = "1,628,89";
+        String valorEsperado = "1,628.89";
         
         String valorAtual =  decimalFormat.format(ex2.calculaValorTotalInvestimento(1000.00, ex2.calculaInvestimentoJurosCompostos(1000.00)));
 

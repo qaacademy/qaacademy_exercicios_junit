@@ -82,7 +82,7 @@ public class TestExercicio08_easy {
         @Test
         public void testeSalarioLiquido() {
 
-            String valorEsperado = "1,992,80";
+            String valorEsperado = "1,992.80";
             String valorAtual = decimalFormat.format(exercicio08_easy.calculaSalarioLiquido(2000.00, exercicio08_easy.calculaImpostoDeRenda(2000.00)));
             Assert.assertEquals(valorEsperado, valorAtual);
         }

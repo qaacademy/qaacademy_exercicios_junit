@@ -1,5 +1,6 @@
 pipeline {
     agent any
+   //
     stages {
         stage('Testes Unitarios') {
             steps {
@@ -19,6 +20,18 @@ pipeline {
                     archiveArtifacts 'target/*.jar'
                 }
             }
+        }
+        stage('Build BugBank') {
+                    steps {
+                        // Download do projeto de teste unitario
+                        sh 'echo Baixando projeto BugBank'
+                        git 'https://github.com/jhonatasmatos/bugbank.git'
+                        // Executar os testes unitarios usando Maven
+                        sh "yarn"
+                        sh "yarn dev"
+
+                    }
+
         }
     }
 }

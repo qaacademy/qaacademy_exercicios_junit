@@ -28,7 +28,7 @@ pipeline {
                         git branch: 'main', url: 'https://github.com/jhonatasmatos/bugbank.git'
                         // Executar os testes unitarios usando Maven
                         sh "yarn"
-                        sh "yarn dev"
+                        sh "yarn dev -d"
 
                     }
 

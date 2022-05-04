@@ -24,8 +24,10 @@ pipeline {
         stage('Build BugBank') {
                     steps {
                         // Download do projeto de teste unitario
+                        sh 'cd ..'
                         sh 'echo Baixando projeto BugBank'
                         git 'https://github.com/jhonatasmatos/bugbank.git'
+                        sh 'cd /bugbank'
                         // Executar os testes unitarios usando Maven
                         sh "yarn"
                         sh "yarn dev"
